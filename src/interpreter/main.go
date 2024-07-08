@@ -4,8 +4,9 @@ package main
 
 import (
     "fmt"
-    //"os"
+    "os"
     "os/user"
+    "potato/repl"
 )
 
 func main() {
@@ -15,5 +16,5 @@ func main() {
     }
     fmt.Printf("Hello %s! This is the Potato programming language!\n", 
         user.Username)
-    //repl.Start(os.Stdin, os.Stdout)
+            repl.Start(os.Stdin, os.Stdout)
 }
